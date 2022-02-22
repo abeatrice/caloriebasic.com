@@ -1,0 +1,37 @@
+{
+  "name": "user",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install",
+    "dev": "env-cmd -f .env nodemon src/app.js",
+    "serve": "nodemon src/app.js",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@vendia/serverless-express": "^4.5.3",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.6.11",
+    "source-map-support": "^0.5.21",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^9.0.3",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
